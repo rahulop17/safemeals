@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diabetic-Friendly Recipe Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Diabetic-Friendly Recipe Recommender 🥗</h1>
+        <select id="cuisine">
+        <option value="">Any Cuisine</option>
+        <option value="Indian">Indian</option>
+        <option value="Italian">Italian</option>
+        <!-- add more -->
+        </select>
+
+        <select id="category">
+        <option value="">Any</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Vegan">Vegan</option>
+        <option value="Chicken">Chicken</option>
+        <!-- add more -->
+        </select>
+
+    <input type="text" id="search" placeholder="Search a meal (e.g., Salad)" />
+    <button onclick="searchMeal()">Search</button>
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
